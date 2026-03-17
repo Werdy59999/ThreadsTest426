@@ -1,4 +1,5 @@
 package controller;
+import services.ServiceFoule;
 /**
  * Controller de l'application. Fait la lisaison entre les différents services et vues. 
  * @version 1.0.0
@@ -7,6 +8,7 @@ package controller;
  */
 public class Controller {
     private static Controller controller;
+    private ServiceFoule serviceFoule;
 
     private Controller() {
         
@@ -20,7 +22,7 @@ public class Controller {
     }
 
     public void start() {
-
+        
     }
 
     public void afficherMessage() {
