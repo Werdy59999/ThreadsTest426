@@ -1,5 +1,10 @@
 package view;
 
+/**
+ * @version 1.0.0
+ * @author Christopher Colleran
+ * @since 17.03.2026
+ */ 
 import controller.Controller;
 
 public class Ihm {
