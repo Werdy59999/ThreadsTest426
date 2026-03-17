@@ -1,5 +1,13 @@
 package controller;
+<<<<<<< Updated upstream
 import services.ServiceFoule;
+=======
+
+import java.util.ArrayList;
+
+import models.Humain;
+
+>>>>>>> Stashed changes
 /**
  * Controller de l'application. Fait la lisaison entre les différents services et vues. 
  * @version 1.0.0
@@ -8,7 +16,11 @@ import services.ServiceFoule;
  */
 public class Controller {
     private static Controller controller;
+<<<<<<< Updated upstream
     private ServiceFoule serviceFoule;
+=======
+    private ArrayList<Humain> humains;
+>>>>>>> Stashed changes
 
     private Controller() {
         
