@@ -14,10 +14,10 @@ public class Controller {
     private static Controller controller;
     private static Ihm view;
 
-    private ArrayList<Humain> humains;
+    private ArrayList<Humain> foules;
 
     private Controller() {
-        humains = ServiceFoule.genererFoule(20);
+        foules = ServiceFoule.genererFoule(20);
     }
 
     public static Controller getInstance() {
@@ -43,5 +43,7 @@ public class Controller {
 
     }
 
-    
+    public ArrayList<Humain> getFoules() {
+        return foules;
+    }
 }
