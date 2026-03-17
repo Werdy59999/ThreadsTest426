@@ -19,8 +19,8 @@ public class ThreadAjouter extends Thread {
     public void run() {
         while (true) {
             ArrayList<Humain> humain = Controller.getInstance().getFoules();
-            int age = ( int ) ( Math.random() * ( MAX – MIN + 1 ) ) + MIN;
-            //humain.add(new Humain(, getName()))
+            int age = ( int ) ( Math.random() * ( MAX - MIN + 1 ) ) + MIN;
+            humain.add(new Humain(age, ))
         }
     }
 }
