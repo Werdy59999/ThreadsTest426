@@ -6,7 +6,7 @@ package models;
  * @since 17.03.2026
  */
 public class Humain {
-    
+
     private int age;
     private String name;
 
@@ -29,5 +29,10 @@ public class Humain {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Je suis " + name + "et j'ai " + age;
     }
 }
