@@ -1,8 +1,10 @@
 package view;
 
+import controller.Controller;
+
 public class Ihm {
 
-    private Ctrl refCtrl;
+    private Controller refCtrl;
 
     public Ihm() {
         this.refCtrl = null;
@@ -12,11 +14,11 @@ public class Ihm {
         System.out.println("============================\n" + message + "\n============================");
     }
 
-    public Ctrl getRefCtrl() {
+    public Controller getRefCtrl() {
         return refCtrl;
     }
 
-    public void setRefCtrl(Ctrl refCtrl) {
+    public void setRefCtrl(Controller refCtrl) {
         this.refCtrl = refCtrl;
     }
 }
