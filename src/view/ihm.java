@@ -9,11 +9,7 @@ public class Ihm {
     }
 
     public void afficher(String message) {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                System.out.println(message);
-            }
-        });
+        System.out.println("============================\n" + message + "\n============================");
     }
 
     public Ctrl getRefCtrl() {
@@ -23,6 +19,5 @@ public class Ihm {
     public void setRefCtrl(Ctrl refCtrl) {
         this.refCtrl = refCtrl;
     }
-
 }
 
