@@ -1,13 +1,9 @@
 package controller;
-<<<<<<< Updated upstream
-import services.ServiceFoule;
-=======
-
 import java.util.ArrayList;
 
+import view.Ihm;
 import models.Humain;
-
->>>>>>> Stashed changes
+import services.ServiceFoule;
 /**
  * Controller de l'application. Fait la lisaison entre les différents services et vues. 
  * @version 1.0.0
@@ -16,14 +12,12 @@ import models.Humain;
  */
 public class Controller {
     private static Controller controller;
-<<<<<<< Updated upstream
-    private ServiceFoule serviceFoule;
-=======
+    private static Ihm view;
+
     private ArrayList<Humain> humains;
->>>>>>> Stashed changes
 
     private Controller() {
-        
+        humains = ServiceFoule.genererFoule(20);
     }
 
     public static Controller getInstance() {
@@ -37,8 +31,8 @@ public class Controller {
         
     }
 
-    public void afficherMessage() {
-
+    public void afficherMessage(String message) {
+        view.afficher(message);
     }
 
     public void supprimerPersonne() {
