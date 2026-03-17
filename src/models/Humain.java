@@ -1,5 +1,33 @@
 package models;
 
+/**
+ * @version 1.0.0
+ * @author Dylan Cardoso
+ * @since 17.03.2026
+ */
 public class Humain {
     
+    private int age;
+    private String name;
+
+    public Humain(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
